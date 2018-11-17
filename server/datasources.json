@@ -1,0 +1,56 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+   "footbaliq_users": {
+    "host": "ds059546.mlab.com",
+    "port": 59546,
+    "url": "",
+    "database": "heroku_vrxq3s8r",
+    "password": "footballiq",
+    "name": "footbaliq_users",
+    "user": "footballiq",
+    "connector": "mongodb"
+  },
+   "footbaliq_2015": {
+    "host": "ds159696.mlab.com",
+    "port": 59696,
+    "url": "",
+    "database": "heroku_js4r3qll",
+    "password": "footballiq",
+    "name": "footbaliq_2015",
+    "user": "footballiq",
+    "connector": "mongodb"
+  },
+   "footbaliq_2016": {
+    "host": "ds059546.mlab.com",
+    "port": 59546,
+    "url": "",
+    "database": "heroku_lqzk3h8s",
+    "password": "footballiq",
+    "name": "footbaliq_2016",
+    "user": "footballiq",
+    "connector": "mongodb"
+  },
+    "footbaliq_2017": {
+    "host": "ds159676.mlab.com",
+    "port": 59676,
+    "url": "",
+    "database": "heroku_gjc135mt",
+    "password": "footballiq",
+    "name": "footbaliq_2017",
+    "user": "footballiq",
+    "connector": "mongodb"
+  },
+   "footbaliq_old_strucute": {
+    "host": "ds163661-a1.mlab.com",
+    "port": 63661,
+    "url": "",
+    "database": "heroku_wskbzl6r",
+    "password": "footballiq",
+    "name": "footbaliq_users",
+    "user": "footballiq",
+    "connector": "mongodb"
+  }
+}

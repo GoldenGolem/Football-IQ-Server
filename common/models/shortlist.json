@@ -1,0 +1,58 @@
+{
+  "name": "shortlist",
+  "plural": "shortlists",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Counts": true,
+    "CascadeDelete": {
+      "relations": [
+        "shortlistPlayers"
+      ],
+      "deepDelete": true
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "shortlist_name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string",
+      "required": true,
+      "default": "created_on"
+    },
+    "created_on": {
+      "type": "date"
+    },
+    "last_updated_on": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "user_id"
+    },
+    "shortlistPlayers": {
+      "type": "hasMany",
+      "model": "shortlist_players",
+      "foreignKey": "shortlist_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

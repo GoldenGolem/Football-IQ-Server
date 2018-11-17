@@ -1,0 +1,33 @@
+{
+  "name": "nat_team_history",
+  "plural": "nat_team_history",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "birth": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "data": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,152 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../node_modules/loopback-cascade-delete-mixin",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": false
+  },
+  "superadmin": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_master": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "users": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+   "players_stats_2017": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_domestic_attribute_2017": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_expected_attribute_2017": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_international_attribute_2017": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_stats_2016": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_domestic_attribute_2016": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_expected_attribute_2016": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_international_attribute_2016": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+   "players_stats_2015": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_domestic_attribute_2015": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_expected_attribute_2015": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_international_attribute_2015": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "watchlist": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "shortlist": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "shortlist_players": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "target": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "target_players": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "filter_views": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "injury_history": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "nat_team_history": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "market_history": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "transfer_history": {
+    "dataSource": "footbaliq_old_strucute",
+    "public": true
+  },
+  "players_2015": {
+    "dataSource": "footbaliq_2015",
+    "public": true
+  },
+  "players_2016": {
+    "dataSource": "footbaliq_2016",
+    "public": true
+  },
+  "players_2017": {
+    "dataSource": "footbaliq_2017",
+    "public": true
+  }
+}

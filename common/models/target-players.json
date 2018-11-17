@@ -1,0 +1,50 @@
+{
+  "name": "target_players",
+  "plural": "target_players",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "target_id": {
+      "type": "string",
+      "required": true
+    },
+    "player_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "number"
+    },
+    "created_on": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "target": {
+      "type": "belongsTo",
+      "model": "target",
+      "foreignKey": "target_id"
+    },
+    "playersMaster": {
+      "type": "belongsTo",
+      "model": "players_master",
+      "foreignKey": "player_id"
+    },
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "user_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

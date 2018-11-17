@@ -1,0 +1,1124 @@
+{
+  "name": "players_stats_2017",
+  "plural": "players_stats_2017",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "primary_position": {
+      "type": "string",
+      "required": true
+    },
+    "secondary_position": {
+      "type": "string",
+      "required": true
+    },
+    "third_position": {
+      "type": "string",
+      "required": true
+    },
+    "primary_position_percent": {
+      "type": "number",
+      "required": true
+    },
+    "secondary_position_percent": {
+      "type": "number",
+      "required": true
+    },
+    "third_position_percent": {
+      "type": "number",
+      "required": true
+    },
+    "age": {
+      "type": "number",
+      "required": true
+    },
+    "height": {
+      "type": "number",
+      "required": true
+    },
+    "weight": {
+      "type": "number",
+      "required": true
+    },
+    "foot": {
+      "type": "string",
+      "required": true
+    },
+    "passport_country_codes": {
+      "type": [
+        "string"
+      ]
+    },
+    "passport_country_names": {
+      "type": [
+        "string"
+      ]
+    },
+    "current_team_id": {
+      "type": "number",
+      "required": true
+    },
+    "current_team_name": {
+      "type": "string",
+      "required": true
+    },
+    "owner_team_id": {
+      "type": "number",
+      "required": true
+    },
+    "owner_team_name": {
+      "type": "string",
+      "required": true
+    },
+    "on_loan": {
+      "type": "boolean",
+      "required": true
+    },
+    "team_ids": {
+      "type": [
+        "number"
+      ]
+    },
+    "team_names": {
+      "type": [
+        "string"
+      ]
+    },
+    "competition_ids": {
+      "type": [
+        "number"
+      ]
+    },
+    "competition_names": {
+      "type": [
+        "string"
+      ]
+    },
+    "matches_played_for_national_team": {
+      "type": "number",
+      "required": true
+    },
+    "total_matches": {
+      "type": "number",
+      "required": true
+    },
+    "matches_in_start": {
+      "type": "number",
+      "required": true
+    },
+    "matches_substituted": {
+      "type": "number",
+      "required": true
+    },
+    "matches_coming_off": {
+      "type": "number",
+      "required": true
+    },
+    "matches_played_percent": {
+      "type": "number",
+      "required": true
+    },
+    "minutes_on_field": {
+      "type": "number",
+      "required": true
+    },
+    "minutes_tagged": {
+      "type": "number",
+      "required": true
+    },
+    "minutes_played_percent": {
+      "type": "number",
+      "required": true
+    },
+    "duels_avg": {
+      "type": "number",
+      "required": true
+    },
+    "duels_won": {
+      "type": "number",
+      "required": true
+    },
+    "defensive_duels_avg": {
+      "type": "number",
+      "required": true
+    },
+    "defensive_duels_won": {
+      "type": "number",
+      "required": true
+    },
+    "offensive_duels_avg": {
+      "type": "number",
+      "required": true
+    },
+    "offensive_duels_won": {
+      "type": "number",
+      "required": true
+    },
+    "aerial_duels_avg": {
+      "type": "number",
+      "required": true
+    },
+    "aerial_duels_won": {
+      "type": "number",
+      "required": true
+    },
+    "fouls_avg": {
+      "type": "number",
+      "required": true
+    },
+    "fouls_of_team_percent": {
+      "type": "number",
+      "required": true
+    },
+    "goals": {
+      "type": "number",
+      "required": true
+    },
+    "goals_tagged": {
+      "type": "number",
+      "required": true
+    },
+    "goals_avg": {
+      "type": "number",
+      "required": true
+    },
+    "goals_wilson": {
+      "type": "number",
+      "required": true
+    },
+    "non_penalty_goal": {
+      "type": "number",
+      "required": true
+    },
+    "non_penalty_goal_avg": {
+      "type": "number",
+      "required": true
+    },
+    "head_goals": {
+      "type": "number",
+      "required": true
+    },
+    "head_goals_avg": {
+      "type": "number",
+      "required": true
+    },
+    "assists": {
+      "type": "number",
+      "required": true
+    },
+    "assists_avg": {
+      "type": "number",
+      "required": true
+    },
+    "passes_avg": {
+      "type": "number",
+      "required": true
+    },
+    "passes_of_team_percent": {
+      "type": "number",
+      "required": true
+    },
+    "accurate_passes_percent": {
+      "type": "number",
+      "required": true
+    },
+    "passes_wilson": {
+      "type": "number",
+      "required": true
+    },
+    "pass_to_penalty_area_avg": {
+      "type": "number",
+      "required": true
+    },
+    "accurate_pass_to_penalty_area_percent": {
+      "type": "number",
+      "required": true
+    },
+    "short_medium_pass_avg": {
+      "type": "number",
+      "required": true
+    },
+    "accurate_short_medium_pass_percent": {
+      "type": "number",
+      "required": true
+    },
+    "smart_passes_avg": {
+      "type": "number",
+      "required": true
+    },
+    "smart_passes_of_team_percent": {
+      "type": "number",
+      "required": true
+    },
+    "accurate_smart_passes_percent": {
+      "type": "number",
+      "required": true
+    },
+    "passes_to_final_third_avg": {
+      "type": "number",
+      "required": true
+    },
+    "accurate_passes_to_final_third_percent": {
+      "type": "number",
+      "required": true
+    },
+    "crosses_avg": {
+      "type": "number",
+      "required": true
+    },
+    "accurate_crosses_percent": {
+      "type": "number",
+      "required": true
+    },
+    "crosses_wilson": {
+      "type": "number",
+      "required": true
+    },
+    "dribbles_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_dribbles_percent": {
+      "type": "number",
+      "required": true
+    },
+    "dribbles_wilson": {
+      "type": "number",
+      "required": true
+    },
+    "shots": {
+      "type": "number",
+      "required": true
+    },
+    "shots_avg": {
+      "type": "number",
+      "required": true
+    },
+    "shots_on_target_percent": {
+      "type": "number",
+      "required": true
+    },
+    "shots_wilson": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_near_corner_avg": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_near_corner_on_target_percent": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_far_corner_avg": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_far_corner_on_target_percent": {
+      "type": "number",
+      "required": true
+    },
+    "head_shots": {
+      "type": "number",
+      "required": true
+    },
+    "head_shots_avg": {
+      "type": "number",
+      "required": true
+    },
+    "head_shots_on_target_percent": {
+      "type": "number",
+      "required": true
+    },
+    "goal_conversion_percent": {
+      "type": "number",
+      "required": true
+    },
+    "interceptions_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_defensive_actions_avg": {
+      "type": "number",
+      "required": true
+    },
+    "yellow_cards": {
+      "type": "number",
+      "required": true
+    },
+    "red_cards": {
+      "type": "number",
+      "required": true
+    },
+    "direct_red_cards": {
+      "type": "number",
+      "required": true
+    },
+    "yellow_cards_avg": {
+      "type": "number",
+      "required": true
+    },
+    "red_cards_avg": {
+      "type": "number",
+      "required": true
+    },
+    "direct_red_cards_avg": {
+      "type": "number",
+      "required": true
+    },
+    "yellow_cards_per_foul": {
+      "type": "number",
+      "required": true
+    },
+    "successful_attacking_actions_avg": {
+      "type": "number",
+      "required": true
+    },
+    "free_kicks_taken_avg": {
+      "type": "number",
+      "required": true
+    },
+    "free_kicks_of_team_percent": {
+      "type": "number",
+      "required": true
+    },
+    "direct_free_kicks_taken_avg": {
+      "type": "number",
+      "required": true
+    },
+    "direct_free_kicks_on_target_percent": {
+      "type": "number",
+      "required": true
+    },
+    "corners_taken_avg": {
+      "type": "number",
+      "required": true
+    },
+    "penalties_taken": {
+      "type": "number",
+      "required": true
+    },
+    "penalties_taken_avg": {
+      "type": "number",
+      "required": true
+    },
+    "penalties_conversion_percent": {
+      "type": "number",
+      "required": true
+    },
+    "market_value": {
+      "type": "number",
+      "required": true
+    },
+    "contract_expires": {
+      "type": "string",
+      "required": true
+    },
+    "clean_sheets": {
+      "type": "number",
+      "required": true
+    },
+    "conceded_goals": {
+      "type": "number",
+      "required": true
+    },
+    "shots_against": {
+      "type": "number",
+      "required": true
+    },
+    "shots_against_avg": {
+      "type": "string",
+      "required": true
+    },
+    "conceded_goals_avg": {
+      "type": "string",
+      "required": true
+    },
+    "save_percent": {
+      "type": "number",
+      "required": true
+    },
+    "save_with_reflex_avg": {
+      "type": "string",
+      "required": true
+    },
+    "save_with_reflex_percent": {
+      "type": "string",
+      "required": true
+    },
+    "goalkeeper_exits_avg": {
+      "type": "string",
+      "required": true
+    },
+    "successful_goalkeeper_exits_percent": {
+      "type": "string",
+      "required": true
+    },
+    "goalkeeper_punch_avg": {
+      "type": "string",
+      "required": true
+    },
+    "goalkeeper_claim_avg": {
+      "type": "string",
+      "required": true
+    },
+    "goalkeeper_claim_to_punch": {
+      "type": "string",
+      "required": true
+    },
+    "goalkeeper_punch_accuracy": {
+      "type": "string",
+      "required": true
+    },
+    "far_conceded_goals_avg": {
+      "type": "string",
+      "required": true
+    },
+    "near_conceded_goals_avg": {
+      "type": "string",
+      "required": true
+    },
+    "super_save_avg": {
+      "type": "string",
+      "required": true
+    },
+    "easy_conceded_goal_avg": {
+      "type": "string",
+      "required": true
+    },
+    "clearance_avg": {
+      "type": "number",
+      "required": true
+    },
+    "gk_aerial_duels_avg": {
+      "type": "string",
+      "required": true
+    },
+    "gk_aerial_duels_won": {
+      "type": "string",
+      "required": true
+    },
+    "average_pass_length": {
+      "type": "number",
+      "required": true
+    },
+    "average_long_pass_length": {
+      "type": "number",
+      "required": true
+    },
+    "average_dribble_distance_from_opponent_goal": {
+      "type": "number",
+      "required": true
+    },
+    "win_percent": {
+      "type": "number",
+      "required": true
+    },
+    "accelerations_avg": {
+      "type": "number",
+      "required": true
+    },
+    "pressing_duels_avg": {
+      "type": "number",
+      "required": true
+    },
+    "loose_ball_duels_avg": {
+      "type": "number",
+      "required": true
+    },
+    "missed_balls_avg": {
+      "type": "number",
+      "required": true
+    },
+    "forward_passes_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_forward_passes_percent": {
+      "type": "number",
+      "required": true
+    },
+    "back_passes_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_back_passes_percent": {
+      "type": "number",
+      "required": true
+    },
+    "through_passes_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_through_passes_percent": {
+      "type": "number",
+      "required": true
+    },
+    "key_passes_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_key_passes_percent": {
+      "type": "number",
+      "required": true
+    },
+    "long_passes_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_long_passes_percent": {
+      "type": "number",
+      "required": true
+    },
+    "long_passes_of_team_percent": {
+      "type": "number",
+      "required": true
+    },
+    "vertical_passes_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_vertical_passes_percent": {
+      "type": "number",
+      "required": true
+    },
+    "saves_wilson": {
+      "type": "number",
+      "required": true
+    },
+    "shot_assists_avg": {
+      "type": "number",
+      "required": true
+    },
+    "shot_on_goal_assists_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_shot_assists_percent": {
+      "type": "number",
+      "required": true
+    },
+    "linkup_plays": {
+      "type": "number",
+      "required": true
+    },
+    "linkup_plays_avg": {
+      "type": "number",
+      "required": true
+    },
+    "successful_linkup_plays_percent": {
+      "type": "number",
+      "required": true
+    },
+    "recoveries_avg": {
+      "type": "number",
+      "required": true
+    },
+    "opponent_half_recoveries_avg": {
+      "type": "number",
+      "required": true
+    },
+    "dangerous_opponent_half_recoveries_avg": {
+      "type": "number",
+      "required": true
+    },
+    "losses_avg": {
+      "type": "number",
+      "required": true
+    },
+    "own_half_losses_avg": {
+      "type": "number",
+      "required": true
+    },
+    "dangerous_own_half_losses_avg": {
+      "type": "number",
+      "required": true
+    },
+    "lost_balls_to_saa_percent": {
+      "type": "number",
+      "required": true
+    },
+    "field_aerial_duels_avg": {
+      "type": "number",
+      "required": true
+    },
+    "field_aerial_duels_won": {
+      "type": "number",
+      "required": true
+    },
+    "touch_in_box_avg": {
+      "type": "number",
+      "required": true
+    },
+    "received_pass_avg": {
+      "type": "number",
+      "required": true
+    },
+    "received_pass_of_team_percent": {
+      "type": "number",
+      "required": true
+    },
+    "received_dangerous_pass_avg": {
+      "type": "number",
+      "required": true
+    },
+    "received_long_pass_avg": {
+      "type": "number",
+      "required": true
+    },
+    "tackle_avg": {
+      "type": "string",
+      "required": true
+    },
+    "successful_tackle_percent": {
+      "type": "number",
+      "required": true
+    },
+    "counterattack_interception_avg": {
+      "type": "number",
+      "required": true
+    },
+    "possession_adjusted_tackle": {
+      "type": "number",
+      "required": true
+    },
+    "possession_adjusted_interceptions": {
+      "type": "number",
+      "required": true
+    },
+    "shot_block_avg": {
+      "type": "number",
+      "required": true
+    },
+    "shot_block_percent": {
+      "type": "number",
+      "required": true
+    },
+    "offsides_avg": {
+      "type": "number",
+      "required": true
+    },
+    "ball_entry_in_final_third_avg": {
+      "type": "number",
+      "required": true
+    },
+    "recently_transferred": {
+      "type": "boolean",
+      "required": true
+    },
+    "season": {
+      "type": "string",
+      "required": true
+    },
+    "data_status": {
+      "type": "string",
+      "required": true
+    },
+    "minutes_per_app": {
+      "type": "number",
+      "required": true
+    },
+    "n90s": {
+      "type": "number",
+      "required": true
+    },
+    "passes_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "passes_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "short_medium_pass_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "short_medium_pass_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "short_medium_pass_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "long_passes_won": {
+      "type": "number",
+      "required": true
+    },
+    "long_passes_lost": {
+      "type": "number",
+      "required": true
+    },
+    "long_passes_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "key_passes_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "key_passes_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "key_passes_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "smart_passes_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "smart_passes_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "smart_passes_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "through_passes_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "through_passes_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "through_passes_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "crosses_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "crosses_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "crosses_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "pass_to_penalty_area_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "pass_to_penalty_area_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "pass_to_penalty_area_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "passes_to_final_third_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "passes_to_final_third_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "passes_to_final_third_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "forward_passes_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "forward_passes_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "forward_passes_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "vertical_passes_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "vertical_passes_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "vertical_passes_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "back_passes_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "back_passes_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "back_passes_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "received_dangerous_pass_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "received_long_pass_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "linkup_plays_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "linkup_plays_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "own_half_losses_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "dangerous_own_half_losses_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "offensive_duels_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "offensive_duels_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "dribbles_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "dribbles_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "shots_avg_on_target": {
+      "type": "number",
+      "required": true
+    },
+    "shots_avg_off_target": {
+      "type": "number",
+      "required": true
+    },
+    "shot_on_target_per_goal": {
+      "type": "string",
+      "required": true
+    },
+    "shot_to_near_corner_avg_on_target": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_near_corner_avg_off_target": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_near_corner_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_far_corner_avg_on_target": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_far_corner_avg_off_target": {
+      "type": "number",
+      "required": true
+    },
+    "shot_to_far_corner_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "head_shots_avg_on_target": {
+      "type": "number",
+      "required": true
+    },
+    "head_shots_avg_off_target": {
+      "type": "number",
+      "required": true
+    },
+    "head_shot_on_target_per_goal": {
+      "type": "string",
+      "required": true
+    },
+    "head_shots_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "head_goals_conversion_percent": {
+      "type": "number",
+      "required": true
+    },
+    "defensive_duels_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "defensive_duels_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "tackle_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "tackle_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "possession_adjusted_tackle_percentage": {
+      "type": "string",
+      "required": true
+    },
+    "counterattack_interception_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "possession_adjusted_interceptions_own_percentage": {
+      "type": "number",
+      "required": true
+    },
+    "opponent_half_recoveries_own_percentage": {
+      "type": "string",
+      "required": true
+    },
+    "dangerous_opponent_half_recoveries_own_percentage": {
+      "type": "string",
+      "required": true
+    },
+    "shot_block_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "shot_block_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "duels_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "duels_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "aerial_duels_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "aerial_duels_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "field_aerial_duels_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "field_aerial_duels_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "direct_free_kicks_taken_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "direct_free_kicks_taken_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "shots_against_saved": {
+      "type": "number",
+      "required": true
+    },
+    "shots_against_not_saved": {
+      "type": "number",
+      "required": true
+    },
+    "shots_against_saved_with_reflex": {
+      "type": "number",
+      "required": true
+    },
+    "shots_against_not_saved_with_reflex": {
+      "type": "number",
+      "required": true
+    },
+    "save_with_reflex_own_percentage": {
+      "type": "string",
+      "required": true
+    },
+    "super_save_own_percentage": {
+      "type": "string",
+      "required": true
+    },
+    "easy_conceded_goal_own_percentage": {
+      "type": "string",
+      "required": true
+    },
+    "far_conceded_goals_own_percentage": {
+      "type": "string",
+      "required": true
+    },
+    "near_conceded_goals_own_percentage": {
+      "type": "string",
+      "required": true
+    },
+    "goalkeeper_exits_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "goalkeeper_exits_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "goalkeeper_punch_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "goalkeeper_punch_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "gk_aerial_duels_avg_won": {
+      "type": "number",
+      "required": true
+    },
+    "gk_aerial_duels_avg_lost": {
+      "type": "number",
+      "required": true
+    },
+    "league": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "playersMaster": {
+      "type": "belongsTo",
+      "model": "players_master",
+      "foreignKey": "_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

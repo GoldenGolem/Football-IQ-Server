@@ -1,0 +1,57 @@
+{
+  "name": "target",
+  "plural": "targets",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Counts": true,
+    "CascadeDelete": {
+      "relations": [
+        "targetPlayers"
+      ],
+      "deepDelete": true
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "target_name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "created_on": {
+      "type": "date"
+    },
+    "last_updated_on": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "user_id"
+    },
+    "targetPlayers": {
+      "type": "hasMany",
+      "model": "target_players",
+      "foreignKey": "target_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,37 @@
+{
+  "name": "filter_views",
+  "plural": "filter_views",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "view_name": {
+      "type": "string",
+      "required": true
+    },
+    "view_columns": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "user_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

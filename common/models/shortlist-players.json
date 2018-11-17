@@ -1,0 +1,50 @@
+{
+  "name": "shortlist_players",
+  "plural": "shortlist_players",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "shortlist_id": {
+      "type": "string",
+      "required": true
+    },
+    "player_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "number"
+    },
+    "created_on": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "shortlist": {
+      "type": "belongsTo",
+      "model": "shortlist",
+      "foreignKey": "shortlist_id"
+    },
+    "playersMaster": {
+      "type": "belongsTo",
+      "model": "players_master",
+      "foreignKey": "player_id"
+    },
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "user_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

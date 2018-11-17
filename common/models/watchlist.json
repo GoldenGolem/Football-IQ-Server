@@ -1,0 +1,42 @@
+{
+  "name": "watchlist",
+  "plural": "watchlists",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Counts": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "player_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "playersMaster": {
+      "type": "belongsTo",
+      "model": "players_master",
+      "foreignKey": "player_id"
+    },
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "user_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

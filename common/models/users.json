@@ -1,0 +1,73 @@
+{
+  "name": "users",
+  "plural": "users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Counts": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "watchlists": {
+      "type": "hasMany",
+      "model": "watchlist",
+      "foreignKey": ""
+    },
+    "shortlists": {
+      "type": "hasMany",
+      "model": "shortlist",
+      "foreignKey": "user_id"
+    },
+    "shortlistPlayers": {
+      "type": "hasMany",
+      "model": "shortlist_players",
+      "foreignKey": "user_id"
+    },
+    "targets": {
+      "type": "hasMany",
+      "model": "target",
+      "foreignKey": "user_id"
+    },
+    "targetPlayers": {
+      "type": "hasMany",
+      "model": "target_players",
+      "foreignKey": "user_id"
+    },
+    "filterViews": {
+      "type": "hasMany",
+      "model": "filter_views",
+      "foreignKey": "user_id"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

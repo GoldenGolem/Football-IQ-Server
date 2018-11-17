@@ -1,0 +1,24 @@
+{
+  "name": "players_international_attribute_2015",
+  "plural": "players_international_attribute_2015",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "at_successful_long_passes_percent": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

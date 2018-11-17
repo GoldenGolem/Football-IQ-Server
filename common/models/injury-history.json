@@ -1,0 +1,36 @@
+{
+  "name": "injury_history",
+  "plural": "injury_history",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "birth": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "mapped": {
+      "type": "string"
+    },
+    "data": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

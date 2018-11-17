@@ -1,0 +1,182 @@
+{
+  "name": "players_master",
+  "plural": "players_master",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Counts": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true
+    },
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "type": "number",
+      "required": true
+    },
+    "birth_date": {
+      "type": "string",
+      "required": true
+    },
+    "birth_day": {
+      "type": "string",
+      "required": true
+    },
+    "birth_country_code": {
+      "type": "string",
+      "required": true
+    },
+    "birth_country_name": {
+      "type": "string",
+      "required": true
+    },
+    "current_team_id": {
+      "type": "number",
+      "required": true
+    },
+    "current_team_name": {
+      "type": "string",
+      "required": true
+    },
+    "current_team_color": {
+      "type": "string",
+      "required": true
+    },
+    "owner_team_id": {
+      "type": "number",
+      "required": true
+    },
+    "owner_team_name": {
+      "type": "string",
+      "required": true
+    },
+    "domestic_competition_name": {
+      "type": "string",
+      "required": true
+    },
+    "domestic_competition_area_name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "playersStats2017s": {
+      "type": "belongsTo",
+      "model": "players_stats_2017",
+      "foreignKey": "_id"
+    },
+    "playersDomesticAttributes2017s": {
+      "type": "belongsTo",
+      "model": "players_domestic_attribute_2017",
+      "foreignKey": "_id"
+    },
+    "playersExpectedAttributes2017s": {
+      "type": "belongsTo",
+      "model": "players_expected_attribute_2017",
+      "foreignKey": "_id"
+    },
+    "playersInternationalAttributes2017s": {
+      "type": "belongsTo",
+      "model": "players_international_attribute_2017",
+      "foreignKey": "_id"
+    },
+    "playersStats2016s": {
+      "type": "belongsTo",
+      "model": "players_stats_2016",
+      "foreignKey": "_id"
+    },
+    "playersDomesticAttributes2016s": {
+      "type": "belongsTo",
+      "model": "players_domestic_attribute_2016",
+      "foreignKey": "_id"
+    },
+    "playersExpectedAttributes2016s": {
+      "type": "belongsTo",
+      "model": "players_expected_attribute_2016",
+      "foreignKey": "_id"
+    },
+    "playersInternationalAttributes2016s": {
+      "type": "belongsTo",
+      "model": "players_international_attribute_2016",
+      "foreignKey": "_id"
+    },
+    "playersStats2015s": {
+      "type": "belongsTo",
+      "model": "players_stats_2015",
+      "foreignKey": "_id"
+    },
+    "playersDomesticAttributes2015s": {
+      "type": "belongsTo",
+      "model": "players_domestic_attribute_2015",
+      "foreignKey": "_id"
+    },
+    "playersExpectedAttributes2015s": {
+      "type": "belongsTo",
+      "model": "players_expected_attribute_2015",
+      "foreignKey": "_id"
+    },
+    "playersInternationalAttributes2015s": {
+      "type": "belongsTo",
+      "model": "players_international_attribute_2015",
+      "foreignKey": "_id"
+    },
+    "injuryHistories": {
+      "type": "belongsTo",
+      "model": "injury_history",
+      "foreignKey": "injuryid"
+    },
+    "marketHistories": {
+      "type": "belongsTo",
+      "model": "market_history",
+      "foreignKey": "market_history_id"
+    },
+    "natTeamHistories": {
+      "type": "belongsTo",
+      "model": "nat_team_history",
+      "foreignKey": "nat_team_history_id"
+    },
+    "transferHistories": {
+      "type": "belongsTo",
+      "model": "transfer_history",
+      "foreignKey": "transfer_history_id"
+    },
+    "watchlists": {
+      "type": "hasMany",
+      "model": "watchlist",
+      "foreignKey": "player_id"
+    },
+    "shortlistPlayers": {
+      "type": "hasMany",
+      "model": "shortlist_players",
+      "foreignKey": "player_id"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

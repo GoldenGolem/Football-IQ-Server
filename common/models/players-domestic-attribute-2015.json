@@ -1,0 +1,20 @@
+{
+  "name": "players_domestic_attribute_2015",
+  "plural": "players_domestic_attribute_2015",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "string",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
